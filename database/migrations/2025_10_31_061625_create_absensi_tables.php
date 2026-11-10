@@ -18,6 +18,7 @@ return new class extends Migration
             $table->date('tanggal_absensi');
             $table->enum('status_absen', ['A', 'H', 'I', 'S']);
             $table->timestamps();
+            $table->unique(['mahasiswa_id', 'matakuliah_id', 'tanggal_absensi');
         });
     }
 

@@ -1,5 +1,3 @@
-@extends('layouts.app')
-
 @section('title', 'Lihat Absensi Mahasiswa')
 
 @push('styles')

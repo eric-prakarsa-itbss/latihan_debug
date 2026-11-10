@@ -5,9 +5,7 @@ use App\Http\Controllers\MataKuliahController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\AbsensiController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [AbsensiController::class, 'index']);
 
 Route::get('/mata-kuliah', [MataKuliahController::class, 'index'])->name('matkul.index');
 Route::get('/mata-kuliah/create', [MataKuliahController::class, 'create'])->name('matkul.create');
