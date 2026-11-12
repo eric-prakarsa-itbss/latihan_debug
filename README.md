@@ -57,3 +57,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+#STEP TO USE
+1. git clone https://github.com/eric-prakarsa-itbss/latihan_debug
+2. composer install
+3. cp .env.example .env (Copy file .env.example and rename it to .env)
+4. change DB_CONNECTION to mysql
+5. Setup DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME and DB_PASSWORD
+6. php artisan migrate
+7. php artisan key:generate
+8. php artisan db:seed
+9. php artisan run
